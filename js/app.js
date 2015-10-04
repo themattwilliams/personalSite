@@ -18,6 +18,10 @@ app.config(['$routeProvider', '$httpProvider',  function($routeProvider, $httpPr
         templateUrl: '/partials/resume.html',
         controller: 'ProfileController'
       })
+      .when('/home', {
+        templateUrl: '/partials/home.html',
+        controller: 'ProfileController'
+      })
       // .when('/game/:id', {
       //   templateUrl: '/partials/show.html',
       //   controller: 'ShowController'

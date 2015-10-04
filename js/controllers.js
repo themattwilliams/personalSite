@@ -11,7 +11,7 @@ app.controller('IndexController', ["$scope", "$location", "$routeParams", "$rout
     console.log("changing to " + view)
     $location.path(view);
   }
-  
+
   // BUBBLES!! BUBBLES!! BUBBLES!! BUBBLES!!
    $(document).ready(function() {
       var background = {}

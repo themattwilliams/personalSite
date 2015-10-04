@@ -1,4 +1,4 @@
-var app = angular.module("ProfileApp", ['ngRoute', 'ngAnimate']);
+var app = angular.module("ProfileApp", ['ngRoute']);
 app.config(['$routeProvider', '$httpProvider',  function($routeProvider, $httpProvider) {
     // $httpProvider.defaults.withCredentials = true;
     $routeProvider

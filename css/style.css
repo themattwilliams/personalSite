@@ -41,17 +41,6 @@ h2 {
   font-size: 2vw;
 }
 
-/*h2 {
-  position: fixed;
-  text-align: center;
-  top: 10px;
-  right: 20px;
-  color: white;
-  font-size: 20px;
-  font-family: Roboto;
-  font-weight: normal;
-  z-index: 999;
-}*/
 h2 span {
   font-size: 15px;
   font-weight: lighter;
@@ -66,4 +55,31 @@ h2 a {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 1.75vw;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+div.page {
+  margin-top: 30px;
+  background-color: green;
+  height: 300px;
+  /*width: 300px;*/
+  min-width: 500px;
+  max-width: 500px;
+}
+
+div.on-top {
+  z-index: 1000;
+}
+
+.my-input {
+  transition:all linear 0.5s;
+  background: transparent;
+}
+.my-input.ng-invalid {
+  color:white;
+  background: red;
 }

@@ -17,17 +17,16 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="bower_components/hover/css/hover-min.css">
 </head>
-<body ng-controller="ProfileController">
+<body>
 <div ng-view> </div>
+<div ng-controller="IndexController">
+	<h1>Matthew Williams</h1>
 
-<h1 ng-click="foo()">Matthew Williams</h1>
-
-<!-- <h2><span></span> |  | </h2> -->
-<h2>
-	<span ng-click="changeView(resume)" class="link hvr-underline-from-left">RESUME</span> |
-	<span class="link hvr-underline-from-center">ABOUT</span> |
-	<span class="link hvr-underline-from-right">PROJECTS</span>
-</h2>
-
+	<h2>
+		<span ng-click="changeView('resume')" class="link hvr-underline-from-left">RESUME</span> |
+		<span ng-click="changeView('about')" class="link hvr-underline-from-center">ABOUT</span> |
+		<span ng-click="changeView('projects')" class="link hvr-underline-from-right">PROJECTS</span>
+	</h2>
+</div>
 </body>
 </html>

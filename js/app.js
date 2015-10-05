@@ -3,23 +3,23 @@ app.config(['$routeProvider', '$httpProvider',  function($routeProvider, $httpPr
     // $httpProvider.defaults.withCredentials = true;
     $routeProvider
       .when('/', {
-        templateUrl: '/partials/home.html',
+        templateUrl: '/personalSite/partials/home.html',
         controller: 'ProfileController'
       })
       .when('/projects', {
-        templateUrl: '/partials/projects.html',
+        templateUrl: '/personalSite/partials/projects.html',
         controller: 'ProfileController'
       })
       .when('/about', {
-        templateUrl: '/partials/about.html',
+        templateUrl: '/personalSite/partials/about.html',
         controller: 'ProfileController'
       })
       .when('/resume', {
-        templateUrl: '/partials/resume.html',
+        templateUrl: '/personalSite/partials/resume.html',
         controller: 'ProfileController'
       })
       .when('/home', {
-        templateUrl: '/partials/home.html',
+        templateUrl: '/personalSite/partials/home.html',
         controller: 'ProfileController'
       })
       // .when('/game/:id', {

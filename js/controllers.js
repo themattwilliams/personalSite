@@ -8,11 +8,15 @@ app.controller('ProfileController', ["$scope", "$location", "$routeParams", "$ro
 
 app.controller('IndexController', ["$scope", "$location", "$routeParams", "$route", "$timeout", function($scope, $location, $routeParams, $route, $timeout){
   $scope.changeView = function (view) {
-     $('.container').addClass('fadeOutUp')
-     
-     $timeout(function(){
-        $location.path(view)
-     },500)
+    var pathView = "/" + view; 
+      if ($location.$$path === pathView) {
+        // don't do anything, you're already on that page
+    } else {
+      $('.container').addClass('fadeOutUp')
+      $timeout(function(){
+         $location.path(view)
+      },500)
+    }
   } // END FUNCTION
 
   // BUBBLES!! BUBBLES!! BUBBLES!! BUBBLES!!
